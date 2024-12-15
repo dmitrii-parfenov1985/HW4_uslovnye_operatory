@@ -72,8 +72,13 @@ public class Main {
         int one = 1;
         int two = 2;
         int three = 3;
-        boolean greatestNumber = one < two && two < three && one < three; {
-            System.out.println("Наибольшее число " + greatestNumber);
+        if (one > two && one > three){
+            System.out.println("Наибольшее число");
+            if (two > one && two > three){
+                System.out.println("Наибольшее число");
+            } else {
+                System.out.println("Наибольшее число" + three);
+            }
         }
     }
 }
